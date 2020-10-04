@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Welcome To nTask!</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'images/stickynotes.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/stickynotes-1.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/stickynotes-2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="p-3 mb-7 bg-success text-white" style="border-radius: 25px; font-size: 25px; text-shadow: 2px 2px 5px red;"></b>Simple And Easy To Use!</p></center>
+                <center><p class="h2 mt-3">“Plan your work and work your plan.”</p></center>
+                <center><p class="h5">nTask Lets You Keep Track Of Your Task In One Place.</p></center>
+
+                <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn btn-dark shadow">Let's Get Started</button></a></center>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
